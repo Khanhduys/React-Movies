@@ -1,0 +1,298 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 1. từ ngoài vào trong
+    2. từ trên xuống dưới 
+    3. từ tổng quan đến chi tiết
+    */
+/*
+ vi tri
+kich thuoc
+mau sac
+kieu dang
+ */
+
+ /* :hover Chọn và tạo kiểu cho một liên kết khi bạn di chuột qua nó: */
+/* .clear{
+
+} */
+.clear{
+    clear: both;
+}
+.text-white{
+    color: white;
+}
+ #main {
+
+
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px; 
+    background-color:black;
+    z-index: 1;
+}
+#header .search-btn{
+    float: right;
+    padding: 0 16px;
+
+}  
+#header .search-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 46px;
+}
+#header .search-btn:hover{
+    background-color:#ccc;
+    cursor: pointer;
+    /* thay đổi hình dạng con trỏ chuột */
+}
+#nav{
+    display: inline-block;
+
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav > li {
+    display: inline-block ;
+}
+#nav li {
+    /* display: inline-block;
+    hiển thị các mục danh sách theo chiều ngang thay vì chiều dọc.
+    cho phép thiết lập chiều rộng và chiều cao trên phần tử.
+    không thêm dấu ngắt dòng sau phần tử, 
+    vì vậy phần tử có thể nằm cạnh các phần tử khác.*/
+    position: relative;
+    
+}
+#nav > li > a {
+    color:white;
+    text-transform: uppercase;
+    /* sua thanh chu in hoa  */
+}
+#nav li a {
+    
+    text-decoration: none;
+    line-height:46px ; 
+    /* Đặt chiều cao dòng cho các phần tử   */
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+
+}
+
+#nav > li:hover > a {
+    color: #000;
+    background-color:#ccc;
+
+}
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+#nav .subnav a {
+    color:white;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .subnav li:hover {
+    color: black;
+    background-color:#ccc;
+   
+}
+#nav .subnav li:hover a {
+    color: #000;
+}
+#slider {
+    margin-top: 46px;
+    padding-top:66.64% ;
+    background: url('/assets/img/slides/anhnam.jpg') top center / cover no-repeat ;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+#slider .text-description{
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+    
+#content {
+
+}
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+
+    
+
+}
+#content .section-heading{
+    font-size: 30px;
+    text-align: center;  
+    font-weight: 500;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+
+
+
+}
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+    /* lam trong suot */
+    font-style: italic;
+    /* chu nghieng */
+}
+#content .about-text{
+margin-top: 25px;
+text-align: justify;
+/* can deu chữ 2 bên */
+line-height: 1.4;
+
+
+}
+#content .members-list{
+    margin-top: 44px;
+    overflow: hidden;
+}
+#content .member-img {
+    margin-top: 15px;
+    width: 133 px;
+    height: 201px;
+    border-radius: 4px;
+    
+}
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+.tour-section{
+    background-color: #000;
+}
+.tickets-list{
+    background-color: white;
+    margin-top: 40px;
+    
+    
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+
+}
+.tickets-list .sold-out{
+    background-color: red;
+    margin-left: 16px;
+    padding: 3px 4px;
+
+}
+
+.tickets-list .quantity{
+    float: right ;
+    margin-top: -6px;
+    border-radius: 50%;
+    
+    background-color: black;
+    color: white;
+    padding: 5px 9px;
+
+
+}
+
+.places-list {
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+
+
+}
+.place-item{
+    width: 33.3333%;
+    float: left;
+    padding: 0 8px;
+    background-image: url('');
+    
+
+
+}
+.place--Img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.place-Img:hover{
+    opacity: 0.6;
+
+}
+.place-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.place-heading{
+font-size: 15px;
+
+
+}
+.place-time{
+margin-top: 15px;
+}
+.place-desc{
+margin-top: 15px;
+line-height: 1.6;
+
+}
+.place-buy-btn{
+    margin: 15px 0;
+text-decoration: none;
+color: white;
+
+background-color: #000;
+padding: 11px 16px;
+display: inline-block;
+}
+.place-buy-btn:hover{
+    opacity: 0.6;
+}
+
+
+
+#footer {
+
+}
